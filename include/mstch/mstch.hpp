@@ -104,7 +104,7 @@ using object = internal::object_t<node>;
 using lambda = internal::lambda_t<node>;
 using map    = std::map<const std::string, node>;
 using array  = std::vector<node>;
-using partial_callback = std::function<std::string(std::string partial_name)>;
+using partial_callback = std::function<std::string(const std::string &partial_name)>;
 
 struct array_wrapper {
     array values;
