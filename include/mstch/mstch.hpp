@@ -108,6 +108,8 @@ using partial_callback = std::function<std::string(const std::string &partial_na
 
 struct array_wrapper {
     array values;
+	
+	array_wrapper(const array &values) : values(values) {}
 };
 
 struct map_wrapper {
