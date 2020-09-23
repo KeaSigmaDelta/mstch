@@ -109,18 +109,21 @@ using partial_callback = std::function<std::string(const std::string &partial_na
 struct array_wrapper {
     array values;
 	
+	array_wrapper() {}
 	array_wrapper(const array &values) : values(values) {}
 };
 
 struct map_wrapper {
     map values;
 	
+	map_wrapper() {}
 	map_wrapper(const map &values) : values(values) {}
 };
 
 struct object_wrapper {
     std::shared_ptr<object> values;
 	
+	object_wrapper() {}
 	object_wrapper(const std::shared_ptr<object> &values) : values(values) {}
 };
 
